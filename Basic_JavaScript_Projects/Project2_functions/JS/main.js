@@ -1,10 +1,7 @@
-var A = "This is an example of"
-var B = " Concatenating two variables together"
-
-
-window.alert("Thanks for your time")
-
-document.write(A + B)
+function My_First_Function(){
+    var str = "This is the button text!";
+    document.getElementById("Button_Text").innerHTML = str;
+}
 
 function myFunction() {
     var sentence = "I am learning";
