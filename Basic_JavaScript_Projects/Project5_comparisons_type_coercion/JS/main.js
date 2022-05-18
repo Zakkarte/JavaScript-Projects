@@ -42,3 +42,6 @@ function not_Function() {       //Function is not functional unless one of the b
 //    document.getElementById("Not").innerHTML = !(20 > 10);  //False
 //    document.getElementById("Not").innerHTML = !(5 > 10);   //True
 }
+
+//    document.write(Bigger = (5 > 1) ? "Left number is bigger":"Right number is bigger");
+
