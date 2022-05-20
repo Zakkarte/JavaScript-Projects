@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html = lang="en"> 
+	<head>
+		<title> Dictionaries </title>
+        <script src="./JS/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="./CSS/CSS_File.css">
+
+	</head>	<meta charset="utf=8">
+	<body>
+		
+		<p id="Loop"></p>
+		<button onclick="Call_Loop()">Click here to start the loop</button>
+
+		<p id="List_of_Instruments"></p>
+		<button onclick="for_Loop()">Click here.</button>
+
+		<p id="Array"></p>
+		<button onclick="array_Function()">Click here to display Array position.</button>
+
+		<p id="Constant"></p>
+		<button onclick="constant_function()">CLick here!</button>
+
+
+		<p id="demo"></p>
+		<script>
+			let x = myFunction(4, 3); 
+				document.getElementById("demo").innerHTML = x;
+
+			function myFunction(a, b) {
+  			  return a * b;  
+			}
+		</script>
+
+		<p id="Car_Object"></p>
+		<script>
+			let car = {
+				make: "Dodge ",
+				model: "Viper ",
+				year: "2021 ",
+				color: "Red ",
+				description: function() {
+					return "The car is a " + this.year + this.color + this.make + this.model;
+				}
+			};
+			document.getElementById("Car_Object").innerHTML = car.description();
+		</script>
+
+		<p id="break"></p>
+		<script>
+			    for (let i = 0; i < 10; i++) {
+        		if (i === 3) {break; }
+        		document.getElementById("break").innerHTML = "The number is " + i + "<br>"; 
+    			}
+		</script>
+		<p id="continue"></p>
+		
+		<script>
+		for (let i = 0; i < 10; i++) {
+        if (i === 3) {continue; }
+        document.getElementById("continue").innerHTML = "The number is " + i + "<br>"; 
+    	}	
+		</script>
+		
+	</body>
+</html>
