@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html = lang="en"> 
+	<head>
+		<title> Dictionaries </title>
+        <script>
+	function Color_Function() {
+    var Color_Output;
+    var Colors = document.getElementById("Color_Input").value;
+    var Color_String = " is a great color!";
+    switch(Colors) {
+        case "Red":
+            Color_Output = "Red" + Color_String;
+        break;
+        case "Yellow":
+            Color_Output = "Yellow" + Color_String;
+        break;
+        case "Green":
+            Color_Output = "Green" + Color_String;
+        break;
+        case "Blue":
+            Color_Output = "Blue" + Color_String;
+        break;
+        case "Pink":
+            Color_Output = "Pink" + Color_String;
+        break;
+        case "Purple":
+            Color_Output = "Purple" + Color_String;
+        break;
+        default:
+        Color_Output = "Please eneter a color exactly as written on the above list.";
+    }
+	document.getElementById("Output").innerHTML = Color_Output;
+}
+		</script>
+		<link rel="stylesheet" type="text/css" href="./CSS/CSS_File.css">
+
+	</head>	
+	<body>
+	
+		<h1>What is your favorite color?</h1>
+		<h3>Pick your favorite color from this list:</h3>
+		<ul>
+			<li>Red</li>
+			<li>Yellow</li>
+			<li>Green</li>
+			<li>Blue</li>
+			<li>Pink</li>
+			<li>Purple</li>
+		</ul>
+		<h3>Enter your choice below:</h3>
+
+		<input id="Color_Input" type="text">
+		<button onclick="Color_Function()">Submit Color</button>
+		<p id=Output></p>
+
+		<h1 class="Click">This text will change!</h1>
+		<h3 class="Click">This text will not change!</h3>
+		<button onclick="Hello_World_Function()">Ckick me!</button>
+		
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(0, 0);
+			ctx.lineTo(200, 100);
+			ctx.stroke();
+			</script>
+			
+		<canvas id="ID_Name" width="500" height="250" style="border: 5px solid black;"></canvas>
+	</body>
+</html>

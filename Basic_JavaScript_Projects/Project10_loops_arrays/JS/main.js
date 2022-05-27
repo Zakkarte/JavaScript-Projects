@@ -1,54 +1,39 @@
-function Call_Loop() {
-    var Digit = "";
-    var X = 1;
-    while (X < 11) {
-        Digit += "<br>" + X;
-        X++;
-    }
-    document.getElementById("Loop").innerHTML = Digit;
+function Color_Function() {
+    var Color_Output;
+    var Colors = document.getElementById("Color_Input").value;
+    var Color_String = " is a great color!";
+    switch(Colors) {
+        case "Red":
+            Color_Output = "Red" + Color_String;
+        break;
+        case "Yellow":
+            Color_Output = "Yellow" + Color_String;
+        break;
+        case "Green":
+            Color_Output = "Green" + Color_String;
+        break;
+        case "Blue":
+            Color_Output = "Blue" + Color_String;
+        break;
+        case "Pink":
+            Color_Output = "Pink" + Color_String;
+        break;
+        case "Purple":
+            Color_Output = "Purple" + Color_String;
+        break;
+        default:
+        Color_Output = "Please eneter a color exactly as written on the above list.";
+     }
 }
 
-var X = "Hello World";
-document.write(X.length);
-
-
-var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
-var Content = "";
-var Y;
-function for_Loop() {
-    for (Y = 0; Y < Instruments.length; Y++) {
-        Content += Instruments[Y] + "<br>";
-    }
-    document.getElementById("List_of_Instruments").innerHTML = Content;
-}
-
-
-function array_Function() {
-    var Array = [];
-    Array[0] = "One";
-    Array[1] = "Two";
-    Array[2] = "Three";
-    Array[3] = "Four";
-    Array[4] = "Five";
-    document.getElementById("Array").innerHTML = "The current position in the array is " +
-        Array[2] + ".";
+function Hello_World_Function() {
+    var A = document.getElementsByClassName("Click");
+    A[0].innerHTML = "The text has changed!";
 }
 
 
-function constant_function() {
-    const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
-    Musical_Instrument.color = "blue";
-    Musical_Instrument.price = "$900";
-    document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + 
-        " was " + Musical_Instrument.price;
-}
-
-var X = 88
-document.write( "<br>" + X);
-{
-    let X = 28
-    document.write("<br>" + X);
-}
-document.write("<br>" + X);
-
-
+var c = document.getElementById("ID_Name");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
